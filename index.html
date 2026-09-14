@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software de inventario Tienda Punto Naranja </title>
+    <!-- llamamos a css -->
+    <link rel="stylesheet" href="style.css">
+    <!--llamamos a javacript-->
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <h1 class="start">Bienvenidos a punto Naranja</h1>
+
+    
+
+  <!-- Contenedor principal -->
+    <div class="principal">
+
+    <nav>
+
+    <button onclick="mostrarMenu()">Menú</button><br><br>
+
+    <div id="opcionesMenu">
+
+        <!-- Esto nos sirve para que nos redireccione a las otras paginas  -->
+
+        <button onclick="window.location.href='inicio.html'">Inicio</button><br><br>
+        <button onclick="window.location.href='login.html'">Login</button><br><br>
+        <button onclick="window.location.href='inventario.html'">Inventario</button><br><br>
+        <button onclick="window.location.href='ventas.html'">Ventas</button><br><br>
+        <button onclick="window.location.href='finanzas.html'">Finanzas</button><br><br>
+
+    </div>
+
+</nav>
+    
+
+        <!-- Contenido -->
+        <div class="contenido">
+
+            <div id="inicio" class="seccion inicio">
+
+                <img class="imagen-inicio" src="imagenes/juices.avif" alt="">
+
+                <h2>¿Quiénes somos?</h2>
+
+                <h3 class="speed">Somos una microempresa creada a partir de diciembre de 2019 debido a la pandemia.<br>
+
+                <br>Nos especializamos en todo de tipo de jugos naturales bebidas y comidas rapidas orientadas
+
+                principalmente a ciclistas<br><br> y gente que hace deporte.</h3>
+
+                
+                <h2>Nuestros productos insignia</h2>
+
+                <div class="productos_principales">
+
+    <div class="producto">
+        <img src="imagenes/naranjuelo.jpg" alt="Jugo de naranja">
+        <h3>Jugo de naranja</h3>
+        <p>
+        La especialidad de la casa,<br>
+        creado a partir de la refrescante<br>
+        naranja tangelo y con las<br>
+        posibilidades de complementarlo<br>
+        con diversas vitaminas<br>
+        y mezclas de otros jugos.
+       </p>
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/salpicon.avif" alt="Salpicón de frutas">
+        <h3>Salpicón</h3>
+        <p>
+        El salpicon es ,<br>
+        una mezcla de sabores y frutas<br>
+        donde el sabor de la<br>
+        papaya el rico melon <br>
+        y el sabroso mango<br>
+        te volvera adicto a su sabor.
+       </p>
+    </div>
+
+    <div class="producto">
+        <img src="imagenes/borojo.webp" alt="Jugo de borojó">
+        <h3>Jugo de borojó</h3>
+        <p>
+        El borojo ,<br>
+        una fruta de la que <br>
+        poco se habla.<br>
+        La cual tiene muchas ventajas<br>
+        bajo la manga <br>
+        y te repondra la energia de inmediato.
+       </p>
+    </div>
+
+</div>
+                <h2>Ubicación</h2>
+
+                <h3 class="speed"> Actualmente estamos ubicados en distintos sectores de las ciudades como Bogota , Villavicencio y el 
+                eje cafetero.</h3>
+
+                <h2>Contáctenos</h2>
+
+                <h3 class="speed">322-548-2956</h3>
+            </div>
+
+            <div id="login" class="seccion">
+                <h2>Login</h2>
+            </div>
+
+            <div id="inventario" class="seccion">
+                <h2>Inventario</h2>
+            </div>
+
+            <div id="ventas" class="seccion">
+                <h2>Ventas</h2>
+            </div>
+
+            <div id="finanzas" class="seccion">
+                <h2>Finanzas</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+</html>

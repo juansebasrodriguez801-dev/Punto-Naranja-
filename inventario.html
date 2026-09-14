@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="titulo">Inventario</h1>
+
+    <input class="campo" type="text" id="producto" placeholder="Nombre del producto">
+
+    <input class="campo" type="number" id="precio" placeholder="Precio">
+
+    <input class="campo" type="number" id="cantidad" placeholder="Cantidad">
+
+    <button class="boton" onclick="agregarProducto()">
+        Agregar producto
+    </button>
+
+    <h2 class="titulo">Productos</h2>
+
+    <div id="listaInventario" class="resultado"></div>
+
+    <br>
+
+    <button class="boton" onclick="window.location.href='ventas.html'">
+        Ir a Ventas
+    </button>
+
+    <button id="finanzas" class="boton" onclick="window.location.href='finanzas.html'">
+        Ir a Finanzas
+    </button>
+
+
+    <script src="script.js"></script>
+
+    <script>
+
+        let rol = localStorage.getItem("rol");
+
+        if (rol !== "administrador") {
+            document.getElementById("finanzas").style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>
+

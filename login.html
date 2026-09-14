@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="roosevelt">Bienvenido al inicio de Sesion</h1>
+
+    <div class="login">
+
+    <h2 class="roosevelt">Inicio de Sesion</h2>
+
+    <label>usuario </label>
+
+    <input class="design" type="text" id="usuario">
+
+    <br><br>
+
+    <label>Contraseña</label>
+
+    <input class="design" type="password" id="contrasena">
+
+    <br><br>
+
+    <label>Rol</label>
+
+        <select class="design" id="rol">
+            <option value="usuario">Usuario</option>
+            <option value="empleado">Empleado</option>
+            <option value="administrador">Administrador</option>
+        </select>
+
+        <br><br>
+
+    <button class="design" onclick="iniciarSesion()">Ingresar</button>
+
+        <p id="mensaje"></p>
+
+    </div>
+</body>
+</html>

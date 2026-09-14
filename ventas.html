@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ventas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="titulo">Ventas</h1>
+
+    <select class="campo" id="productoVenta"></select>
+
+    <input 
+        class="campo" 
+        type="number" 
+        id="cantidadVenta" 
+        placeholder="Cantidad"
+    >
+
+    <button class="boton" onclick="realizarVenta()">
+        Realizar venta
+    </button>
+
+    <h2 class="resultado" id="resultadoVenta"></h2>
+
+    <br>
+
+    <button class="boton" onclick="window.location.href='inventario.html'">
+        Inventario
+    </button>
+
+    <button class="boton" onclick="window.location.href='finanzas.html'">
+        Finanzas
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="titulo">Compras</h1>
+
+    <h2 class="resultado">Bienvenido a la sección de compras</h2>
+
+    <button class="boton" onclick="window.location.href='inicio.html'">
+        Ver productos
+    </button>
+
+    <select class="campo" id="productoCompra"></select>
+
+    <input class="campo" type="number" id="cantidadCompra" placeholder="Cantidad">
+
+    <button class="boton" onclick="calcularCompra()">
+        Comprar
+    </button>
+
+    <h2 class="resultado" id="resultadoCompra"></h2>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+body{
+    
+background-color: rgb(231, 117, 42);
+}
+
+.start{
+
+     text-align: center;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    color: rgb(44, 97, 99);
+
+
+}
+
+.second{
+
+    text-align: center;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    color: rgb(44, 97, 99);
+}
+
+.seccion {
+
+    text-align: center;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    color: rgb(44, 97, 99);
+
+}
+
+
+.seccion {
+    display: none;
+}
+
+.seccion.inicio {
+    display: block;
+    color: rgb(44, 97, 99);
+
+}
+
+#opcionesMenu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav:hover #opcionesMenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+#opcionesMenu button {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+nav:hover #opcionesMenu button {
+    animation: aparecer 0.5s forwards;
+}
+
+nav:hover #opcionesMenu button:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+nav:hover #opcionesMenu button:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+nav:hover #opcionesMenu button:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+nav:hover #opcionesMenu button:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+nav:hover #opcionesMenu button:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#opcionesMenu button{
+
+    color: rgb(255, 255, 255);
+
+    font-weight: bold;
+
+    border-radius: 50px;
+
+    font-family: cursive;
+
+    background-color: rgb(44, 97, 99);
+
+    display: block;
+
+    margin: 0 auto;
+
+  
+}
+
+nav > button {
+    color: rgb(255, 255, 255);
+
+    background-color: rgb(44, 97, 99);
+
+    border-radius: 50px;
+
+    font-family: cursive;
+
+    font-weight: bold;
+
+    display: block;
+
+    margin: 22px;
+
+    font-size: medium;
+
+    display: block;
+
+    margin: 0 auto;
+
+}
+
+#opcionesMenu button:hover {
+    background-color: rgb(132, 180, 29);
+}
+
+.imagen-inicio{
+    width: 400px;
+
+    display: block;
+
+    margin: 0 auto;
+
+    border-radius: 30px;
+
+
+}
+
+
+
+nav {
+    width: 414px;
+
+}
+
+.principal {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+}
+
+.contenido {
+    width: 100%;
+
+}
+
+.imagen-inicio {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.speed{
+
+    color: aliceblue;
+}
+
+/* Contenedor de los productos */
+.productos_principales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Imágenes de los productos */
+.productos_principales img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.imagen{
+
+    width: 600px;
+
+    display: block;
+
+    margin: 0 auto;
+
+    border-radius: 50px;
+
+}
+
+.jugosnaturales{
+
+    text-align: center;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI'
+    , Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    color: rgb(44, 97, 99);
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(44, 97, 99);
+}
+
+.campo {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.boton {
+    color: white;
+    background-color: rgb(44, 97, 99);
+    border-radius: 50px;
+    padding: 8px 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: rgb(132, 180, 29);
+}
+
+.resultado {
+    color: white;
+    font-weight: bold;
+}
+
+/* Título del login */
+.roosevelt {
+    text-align: center;
+    color: rgb(44, 97, 99);
+    font-family: system-ui, sans-serif;
+}
+
+/* Caja del login */
+.login {
+    width: 350px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(255, 180, 80);
+    border-radius: 20px;
+}
+
+/* Campos y botones */
+.design {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+/* Botón */
+button.design {
+    color: white;
+    background-color: rgb(44, 97, 99);
+    cursor: pointer;
+}
+
+/* Cuando pasas el mouse por encima */
+button.design:hover {
+    background-color: rgb(132, 180, 29);
+}
+
+/* Mensaje del login */
+#mensaje {
+    color: white;
+    font-weight: bold;
+}
+
+/* Títulos */
+.titulo {
+    text-align: center;
+    color: rgb(44, 97, 99);
+    font-family: system-ui, sans-serif;
+}
+
+/* Campos de texto, números y select */
+.campo {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+/* Botones */
+.boton {
+    padding: 8px 15px;
+    margin: 5px;
+    color: white;
+    background-color: rgb(44, 97, 99);
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Efecto al pasar el mouse */
+.boton:hover {
+    background-color: rgb(132, 180, 29);
+}
+
+/* Resultados */
+.resultado {
+    color: white;
+    font-weight: bold;
+}
